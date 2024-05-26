@@ -31,6 +31,7 @@ pybase64
 pycountry
 pymongo
 pyrogram
+pyrofork==2.2.11
 python-dotenv
 python-magic
 qbittorrent-api
@@ -41,7 +42,6 @@ tenacity
 tgcrypto
 uvloop
 xattr
-yt-dlp==2024.4.9
-Flask
-gunicorn
+yt-dlp==2023.10.07
+
 
