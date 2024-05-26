@@ -42,3 +42,6 @@ tgcrypto
 uvloop
 xattr
 yt-dlp
+Flask
+gunicorn
+
