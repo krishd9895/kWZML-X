@@ -79,22 +79,22 @@ class WZMLStyle:
 ┗ <b>Usable CPU(s) :</b> {cpu_use} ⚙️'''
     '''
     REPO_STATS = '''⌬ <b><i>REPO STATISTICS :</i></b>
-┣ <b>Bot Updated :</b> {last_commit} 📅
-┣ <b>Current Version :</b> {bot_version} 🆚
-┣ <b>Latest Version :</b> {lat_version} 🆕
-┗ <b>Last ChangeLog :</b> {commit_details} 📝
+┠ <b>Bot Updated :</b> {last_commit}
+┠ <b>Current Version :</b> {bot_version}
+┠ <b>Latest Version :</b> {lat_version}
+┖ <b>Last ChangeLog :</b> {commit_details}
 
 ⌬ <b>REMARKS :</b> <code>{remarks}</code>
     '''
     BOT_LIMITS = '''⌬ <b><i>BOT LIMITATIONS :</i></b>
-┣ <b>Direct Limit :</b> {DL} GB 🚀
-┣ <b>Torrent Limit :</b> {TL} GB 🌐
-┣ <b>GDrive Limit :</b> {GL} GB ☁️
-┣ <b>YT-DLP Limit :</b> {YL} GB 📺
-┣ <b>Playlist Limit :</b> {PL} 🎵
-┣ <b>Mega Limit :</b> {ML} GB 💾
-┣ <b>Clone Limit :</b> {CL} GB ♻️
-┗ <b>Leech Limit :</b> {LL} GB 🪝
+┠ <b>Direct Limit :</b> {DL} GB
+┠ <b>Torrent Limit :</b> {TL} GB
+┠ <b>GDrive Limit :</b> {GL} GB
+┠ <b>YT-DLP Limit :</b> {YL} GB
+┠ <b>Playlist Limit :</b> {PL}
+┠ <b>Mega Limit :</b> {ML} GB
+┠ <b>Clone Limit :</b> {CL} GB
+┖ <b>Leech Limit :</b> {LL} GB
 
 ┎ <b>Token Validity :</b> {TV}
 ┠ <b>User Time Limit :</b> {UTI} / task
@@ -104,16 +104,16 @@ class WZMLStyle:
     # ---------------------
 
     # async def restart(client, message): ---> __main__.py
-    RESTARTING = '<i>Restarting... 🔄</i>'
+    RESTARTING = '<i>Restarting...</i>'
     # ---------------------
 
     # async def restart_notification(): ---> __main__.py
-    RESTART_SUCCESS = '''⌬ <b><i>Restarted Successfully! ✅</i></b>
-┣ <b>Date:</b> {date} 📅
-┣ <b>Time:</b> {time} ⏰
-┣ <b>TimeZone:</b> {timz} 🌍
-┗ <b>Version:</b> {version} 🆚'''
-    RESTARTED = '''⌬ <b><i>Bot Restarted! 🔄</i></b>'''
+    RESTART_SUCCESS = '''⌬ <b><i>Restarted Successfully!</i></b>
+┠ <b>Date:</b> {date}
+┠ <b>Time:</b> {time}
+┠ <b>TimeZone:</b> {timz}
+┖ <b>Version:</b> {version}'''
+    RESTARTED = '''⌬ <b><i>Bot Restarted!</i></b>'''
     # ---------------------
 
     # async def ping(client, message): ---> __main__.py
