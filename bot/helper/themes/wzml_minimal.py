@@ -101,19 +101,17 @@ BOT_LIMITS = '''⌬ <b><i>BOT LIMITATIONS :</i></b>
 ┠ <b>User Time Limit :</b> {UTI} / task
 ┠ <b>User Parallel Tasks :</b> {UT}
 ┖ <b>Bot Parallel Tasks :</b> {BT}
-'''
+    '''
     # ---------------------
 
     # async def restart(client, message): ---> __main__.py
     RESTARTING = '<i>Restarting... 🔄</i>'
 
-RESTART_SUCCESS = '''⌬ <b><i>Restarted Successfully! ✅</i></b>
+    RESTART_SUCCESS = '''⌬ <b><i>Restarted Successfully! ✅</i></b>
 ┣ <b>Date:</b> {date} 📅
 ┣ <b>Time:</b> {time} ⏰
 ┣ <b>TimeZone:</b> {timz} 🌍
-┗ <b>Version:</b> {version} 🆚
-'''
-    # async def restart_notification(): ---> __main__.py
+┗ <b>Version:</b> {version} 🆚'''
     RESTARTED = '''⌬ <b><i>Bot Restarted! 🔄</i></b>'''
 
     # ---------------------
