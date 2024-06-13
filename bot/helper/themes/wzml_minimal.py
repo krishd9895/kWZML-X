@@ -87,7 +87,7 @@ class WZMLStyle:
 ⌬ <b>REMARKS :</b> <code>{remarks}</code>
 '''
 
-BOT_LIMITS = '''⌬ <b><i>BOT LIMITATIONS :</i></b>
+    BOT_LIMITS = '''⌬ <b><i>BOT LIMITATIONS :</i></b>
 ┣ <b>Direct Limit :</b> {DL} GB 🚀
 ┣ <b>Torrent Limit :</b> {TL} GB 🌐
 ┣ <b>GDrive Limit :</b> {GL} GB ☁️
