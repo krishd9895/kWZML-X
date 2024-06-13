@@ -85,7 +85,7 @@ class WZMLStyle:
 ┗ <b>Last ChangeLog :</b> {commit_details} 📝
 
 ⌬ <b>REMARKS :</b> <code>{remarks}</code>
-'''
+    '''
 
     BOT_LIMITS = '''⌬ <b><i>BOT LIMITATIONS :</i></b>
 ┣ <b>Direct Limit :</b> {DL} GB 🚀
@@ -106,7 +106,9 @@ class WZMLStyle:
 
     # async def restart(client, message): ---> __main__.py
     RESTARTING = '<i>Restarting... 🔄</i>'
+    # ---------------------
 
+    # async def restart_notification(): ---> __main__.py
     RESTART_SUCCESS = '''⌬ <b><i>Restarted Successfully! ✅</i></b>
 ┣ <b>Date:</b> {date} 📅
 ┣ <b>Time:</b> {time} ⏰
