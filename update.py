@@ -5,6 +5,8 @@ from pkg_resources import working_set
 from requests import get as rget
 from dotenv import load_dotenv, dotenv_values
 from pymongo import MongoClient
+import time
+import requests
 
 if ospath.exists('log.txt'):
     with open('log.txt', 'r+') as f:
@@ -85,3 +87,26 @@ if UPSTREAM_REPO is not None:
     else:
         log_error('Something went Wrong ! Retry or Ask Support !')
     log_info(f'UPSTREAM_REPO: {UPSTREAM_REPO} | UPSTREAM_BRANCH: {UPSTREAM_BRANCH}')
+
+def auto_ping(interval_minutes=1):
+    bot_token = environ.get('BOT_TOKEN', '')
+    ping_url = f'https://api.telegram.org/bot{bot_token}/getMe'
+    
+    while True:
+        try:
+            response = requests.get(ping_url)
+            response.raise_for_status()  # Raise an error for HTTP errors (4xx or 5xx)
+            log_info(f'Ping sent to {ping_url}. Status: {response.status_code}')
+        except Exception as e:
+            log_error(f'Error sending ping to {ping_url}: {str(e)}')
+        
+        time.sleep(interval_minutes * 60)  # Convert minutes to seconds
+
+if __name__ == '__main__':
+    auto_ping_enabled = True  # Set to True by default
+    
+    # You can change auto_ping_enabled to False whenever needed
+    # auto_ping_enabled = False
+    
+    if auto_ping_enabled:
+        auto_ping()
