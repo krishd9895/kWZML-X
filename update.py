@@ -88,7 +88,7 @@ if UPSTREAM_REPO is not None:
         log_error('Something went Wrong ! Retry or Ask Support !')
     log_info(f'UPSTREAM_REPO: {UPSTREAM_REPO} | UPSTREAM_BRANCH: {UPSTREAM_BRANCH}')
 
-def auto_ping(interval_minutes=1):
+def auto_ping(interval_minutes=5):
     bot_token = environ.get('BOT_TOKEN', '')
     ping_url = f'https://api.telegram.org/bot{bot_token}/getMe'
     
