@@ -3,7 +3,7 @@ from asyncio.subprocess import PIPE, create_subprocess_exec as exec
 from json import loads as jsonloads
 from asyncio import sleep, TimeoutError
 from os.path import splitext
-from bot.helper.telegram_helper.message_utils import (
+from bot.helper.telegram_helper.message_utils2 import (
     editMarkup,
     editMessage,
     sendMarkup,
