@@ -2,7 +2,7 @@ from pyrogram.filters import regex
 from pyrogram import filters
 from pyrogram.handlers import CallbackQueryHandler, MessageHandler
 from bot import bot, config_dict
-from bot.helper.ext_utils.bot_utils import run_sync_to_async
+from bot.helper.ext_utils.bot_utils2 import run_sync_to_async
 from bot.helper.telegram_helper.bot_commands import BotCommands
 from bot.helper.telegram_helper.filters2 import CustomFilters
 from bot.helper.ext_utils.menu_utils import (
@@ -10,7 +10,7 @@ from bot.helper.ext_utils.menu_utils import (
     rcloneListButtonMaker,
     rcloneListNextPage,
 )
-from bot.helper.telegram_helper.message_utils import editMessage, sendMessage
+from bot.helper.telegram_helper.message_utils2 import editMessage, sendMessage
 from bot.helper.telegram_helper.button_build import ButtonMaker
 from bot.helper.ext_utils.rclone_utils import (
     create_next_buttons,
