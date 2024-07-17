@@ -16,3 +16,8 @@ class RssShutdownException(Exception):
 class TgLinkException(Exception):
     """No Access granted for this chat"""
     pass
+
+class NotRclonePathFound(Exception):
+    """Rclone path not found"""
+
+    pass
