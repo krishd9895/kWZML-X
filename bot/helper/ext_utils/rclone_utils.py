@@ -4,7 +4,7 @@ from asyncio.subprocess import PIPE
 from json import loads as jsonloads
 from configparser import ConfigParser
 from bot import GLOBAL_EXTENSION_FILTER, LOGGER, config_dict, remotes_multi
-from bot.helper.ext_utils.bot_utils import cmd_exec, run_sync_to_async
+from bot.helper.ext_utils.bot_utils2 import cmd_exec, run_sync_to_async
 from bot.helper.telegram_helper.bot_commands import BotCommands
 from bot.helper.ext_utils.exceptions import NotRclonePathFound
 from bot.helper.telegram_helper.filters import CustomFilters
