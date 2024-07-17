@@ -11,7 +11,7 @@ from bot import (
 )
 from pyrogram.errors.exceptions import FloodWait, MessageNotModified
 from pyrogram.enums.parse_mode import ParseMode
-from bot.helper.ext_utils.bot_utils import get_readable_message, run_sync_to_async, setInterval
+from bot.helper.ext_utils.bot_utils2 import get_readable_message, run_sync_to_async, setInterval
 
 
 async def sendMessage(text: str, message, reply_markup=None):
