@@ -51,6 +51,11 @@ non_queued_dl = set()
 non_queued_up = set()
 
 
+status_dict_lock = Lock()
+status_dict = {}
+status_reply_dict_lock = Lock()
+status_reply_dict = {}
+
 try:
     if bool(environ.get('_____REMOVE_THIS_LINE_____')):
         log_error('The README.md file there to be read! Exiting now!')
