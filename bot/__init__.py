@@ -52,6 +52,7 @@ non_queued_up = set()
 
 tmdb_titles = {}
 remotes_multi = []
+leech_log = []
 
 
 status_dict_lock = Lock()
@@ -235,6 +236,14 @@ if len(MIRROR_LOG_ID) == 0:
 LEECH_LOG_ID = environ.get('LEECH_LOG_ID', '')
 if len(LEECH_LOG_ID) == 0:
     LEECH_LOG_ID = ''
+
+
+LEECH_LOG = environ.get("LEECH_LOG", "")
+if len(LEECH_LOG) != 0:
+    leech_log.clear()
+    aid = LEECH_LOG.split()
+    for id_ in aid:
+        leech_log.append(int(id_.strip()))
     
 EXCEP_CHATS = environ.get('EXCEP_CHATS', '')
 if len(EXCEP_CHATS) == 0:
@@ -673,6 +682,7 @@ config_dict = {'ANIME_TEMPLATE': ANIME_TEMPLATE,
                'DAILY_LEECH_LIMIT': DAILY_LEECH_LIMIT,
                'MIRROR_LOG_ID': MIRROR_LOG_ID,
                'LEECH_LOG_ID': LEECH_LOG_ID,
+               'LEECH_LOG': LEECH_LOG,
                'LINKS_LOG_ID': LINKS_LOG_ID,
                'EXCEP_CHATS': EXCEP_CHATS,
                'BOT_PM': BOT_PM,
