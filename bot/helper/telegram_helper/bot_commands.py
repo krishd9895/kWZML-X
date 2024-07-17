@@ -58,5 +58,8 @@ class _BotCommands:
         self.GDCleanCommand = [f'gdclean{CMD_SUFFIX}', f'gc{CMD_SUFFIX}']
         self.BroadcastCommand = [f'broadcast{CMD_SUFFIX}', f'bc{CMD_SUFFIX}']
         self.RcfmCommand = f'rcfm{CMD_SUFFIX}'
+        self.StorageCommand = f'storage{CMD_INDEX}'
+        self.TMDB = f'tmdb{CMD_INDEX}'
+        self.BiSyncCommand = f'bisync{CMD_INDEX}'
 
 BotCommands = _BotCommands()
