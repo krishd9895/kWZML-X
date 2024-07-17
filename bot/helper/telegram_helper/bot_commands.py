@@ -63,5 +63,7 @@ class _BotCommands:
         self.BiSyncCommand = f'bisync{CMD_SUFFIX}'
         self.BotFilesCommand = [f'files{CMD_SUFFIX}', f'bf{CMD_SUFFIX}']
         self.CopyCommand = f'copy{CMD_SUFFIX}'
+        self.Debrid = f'debrid{CMD_SUFFIX}'
+        self.DebridInfo = f'info{CMD_SUFFIX}'
 
 BotCommands = _BotCommands()
