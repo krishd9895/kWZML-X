@@ -61,5 +61,7 @@ class _BotCommands:
         self.StorageCommand = f'storage{CMD_SUFFIX}'
         self.TMDB = f'tmdb{CMD_SUFFIX}'
         self.BiSyncCommand = f'bisync{CMD_SUFFIX}'
+        self.BotFilesCommand = [f'files{CMD_SUFFIX}', f'bf{CMD_SUFFIX}']
+        self.CopyCommand = f'copy{CMD_SUFFIX}'
 
 BotCommands = _BotCommands()
