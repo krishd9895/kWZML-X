@@ -58,6 +58,9 @@ status_reply_dict = {}
 
 botUptime = time()
 
+PARALLEL_TASKS = environ.get("PARALLEL_TASKS", "")
+PARALLEL_TASKS = 0 if len(PARALLEL_TASKS) == 0 else int(PARALLEL_TASKS)
+
 try:
     if bool(environ.get('_____REMOVE_THIS_LINE_____')):
         log_error('The README.md file there to be read! Exiting now!')
