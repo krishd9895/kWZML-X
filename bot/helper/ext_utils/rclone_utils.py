@@ -13,7 +13,7 @@ from bot.helper.ext_utils.menu_utils import (
     rcloneListButtonMaker,
     rcloneListNextPage,
 )
-from bot.helper.telegram_helper.message_utils import (
+from bot.helper.telegram_helper.message_utils2 import (
     editMessage,
     sendMarkup,
     sendMessage,
