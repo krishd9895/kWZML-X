@@ -230,6 +230,19 @@ if len(USER_SESSION_STRING) != 0:
         log_error(f"Failed making client from USER_SESSION_STRING : {e}")
         user = ''
 
+app = ""
+USER_SESSION_STRING = environ.get("USER_SESSION_STRING", "")
+if len(USER_SESSION_STRING) != 0:
+    LOGGER.info("Creating Pyrogram client from USER_SESSION_STRING")
+    app = tgClient(
+        "pyrogram_session",
+        api_id=TELEGRAM_API,
+        api_hash=TELEGRAM_HASH,
+        session_string=USER_SESSION_STRING,
+        max_concurrent_transmissions=10,
+    ).start()
+    IS_PREMIUM_USER = app.me.is_premium
+
 MEGA_EMAIL = environ.get('MEGA_EMAIL', '')
 MEGA_PASSWORD = environ.get('MEGA_PASSWORD', '')
 if len(MEGA_EMAIL) == 0 or len(MEGA_PASSWORD) == 0:
