@@ -6,7 +6,7 @@ from asyncio.subprocess import PIPE, create_subprocess_exec as exec
 from bot import bot
 from bot.helper.ext_utils.menu_utils import Menus
 from bot.helper.telegram_helper.bot_commands import BotCommands
-from bot.helper.telegram_helper.filters import CustomFilters
+from bot.helper.telegram_helper.filters2 import CustomFilters
 from bot.helper.ext_utils.human_format import get_readable_file_size
 from bot.helper.ext_utils.rclone_utils import (
     get_rclone_path,
