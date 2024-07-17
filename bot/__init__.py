@@ -50,6 +50,9 @@ bot_cache = {}
 non_queued_dl = set()
 non_queued_up = set()
 
+tmdb_titles = {}
+remotes_multi = []
+
 
 status_dict_lock = Lock()
 status_dict = {}
