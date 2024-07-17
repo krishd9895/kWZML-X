@@ -47,7 +47,7 @@ async def is_rclone_config(user_id, message, isLeech=False):
         path = f"rclone/{user_id}/rclone.conf"
         no_path_msg = "Send a rclone config file, use /files command"
     else:
-        if CustomFilters.sudo(user_id):
+        if await CustomFilters.custom_sudo_filter(None, message):
             path = f"rclone/{user_id}/rclone.conf"
             no_path_msg = "Send a rclone config file, use /files command"
         else:
