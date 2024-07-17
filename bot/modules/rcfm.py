@@ -4,7 +4,7 @@ from pyrogram.handlers import CallbackQueryHandler, MessageHandler
 from bot import bot, config_dict
 from bot.helper.ext_utils.bot_utils import run_sync_to_async
 from bot.helper.telegram_helper.bot_commands import BotCommands
-from bot.helper.telegram_helper.filters import CustomFilters
+from bot.helper.telegram_helper.filters2 import CustomFilters
 from bot.helper.ext_utils.menu_utils import (
     Menus,
     rcloneListButtonMaker,
